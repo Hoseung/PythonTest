@@ -1,13 +1,11 @@
 import math
 import pytest 
-import src.shapes as rectangle
 
 
-
-def test_area():
+def test_area(my_rectangle):
     assert my_rectangle.area() == 2 * (my_rectangle.width * my_rectangle.height) 
 
-def test_perimeter():
+def test_perimeter(my_rectangle):
     assert my_rectangle.perimeter() == 2 * (my_rectangle.width + my_rectangle.height)
 
 

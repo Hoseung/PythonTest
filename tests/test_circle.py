@@ -13,3 +13,10 @@ class Teset_circle():
 
     def test_perimeter(self):
         assert self.circle.perimeter() == 2 * math.pi * self.circle.radius
+
+
+def test_circle():
+    cc = circle.Circle(2)
+    assert cc.radius == 2
+    assert cc.area() == 2**2 * math.pi
+    assert cc.perimeter() == 2 * math.pi * cc.radius
