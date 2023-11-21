@@ -30,7 +30,15 @@ class Rectangle(Shape):
         return False
 
     def area(self):
-        return 2 * (self.width * self.height)
+        return self.width * self.height
 
     def perimeter(self):
         return 2 * (self.width + self.height)
+    
+
+class Square(Rectangle):
+    def __init__(self, side_length):
+        super().__init__(side_length, side_length)
+
+    def area(self):
+        return super().area()
